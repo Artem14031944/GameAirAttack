@@ -1,0 +1,374 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(/img/bg1.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	display: none;
+}
+.wrapper_open{
+	display: block;
+}
+.start_menu_item {
+	display: flex;
+	justify-content: space-between;
+}
+.start_game_menu {
+	background: url(/img/fon_game_menu_6.jpeg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+.start_game__buttons {
+	display: flex;
+	flex-direction: column;
+	margin-top: 150px;
+	margin-right: 25px;
+}
+.titleGame {
+	margin-left: 25px;
+	display: flex;
+	justify-content: flex-end; 
+}
+.titleGame h2 {
+	font-size: 50px;
+	color: #3fbd34;
+	font-style: italic;
+}
+.start_game__buttons button {
+	width: 200px;
+	height: 60px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	color: #351c75;
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: 800;
+	background: transparent;
+	border-bottom: 1px solid;
+}
+.start_game__buttons button:hover {
+	background: #351c75;
+	color: #3fbd34;
+	transition: .8s;
+} 
+.btnStart {
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	border: 0;
+	color: cornflowerblue;
+	cursor: pointer;
+}
+#player {
+	height: 100px;
+	position: absolute;
+	top: calc(50% - 225px);
+	left: 20px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#player.skin_1 {
+	width: 165px;
+	height: 120px;
+	background: url(/img/Lovepik_com-401571516-propeller-fighter.png) no-repeat;
+	background-size: 168px;
+}
+
+#player.skin_2 {
+	width: 165px;
+	background: url(/img/Lovepik_com-400628551-fighter.png) no-repeat;
+	background-size: 168px;
+}
+
+#player.skin_3 {
+	width: 165px;
+	height: 120px;
+	background: url(/img/player_3.png) no-repeat;
+	background-size: 168px;
+}
+
+.enemy {
+	position: absolute;
+	top: calc(50% - 85px);
+	right: 20px;
+	width: 120px;
+	height: 73px;
+	background: url(/img/eneme3.gif) no-repeat;
+	background-size: 120px;
+}
+.asteroid {
+	position: absolute;
+	top: calc(50% - 85px);
+	right: 20px;
+	width: 120px;
+	height: 110px;
+	background: url(/img/asteroid.gif) no-repeat;
+	background-size: 140px;
+}
+.bullet {
+	width: 20px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+	background-size: 20px;
+    border-radius: 2px 5px 5px 2px;
+    position: absolute;
+    top: 20%;
+    left: 180px;
+    border-radius: 2px 7px 7px 2px; 
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px yellow, 0 0 25px yellow;
+    z-index: 5;
+}
+
+.boom {
+	background: url(/img/boom.gif);
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+.boomPlayer {
+	background: url(/img/boomPlayer_3.gif);
+	background-size: 200px;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+
+#lifes {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+#lifes span {
+	display: block;
+	margin: 10px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(/img/playner.png);
+	background-size: cover;
+}
+.score  span{
+	font-size: 25px;
+}
+.comber {
+	font-size: 25px;
+}
+.modal {
+	display: block;
+	z-index: 1;
+}
+.modalClose {
+	display: none;
+}
+.modal_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 1);
+} 
+.modal_window {
+	width: 500px;
+	border-radius: 5px;
+	background: #351c75;
+	margin: 50px auto;
+} 
+.modal_content p {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+.modal_footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+.modal_footer button {
+	margin-bottom: 10px;
+	width: 200px;
+	height: 45px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	color: #351c75;
+	font-weight: 600;
+	background: #f7d7b5;
+} 
+.modal_title {
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	font-weight: 600;
+	color: #e69138;
+}
+.modal_footer button:hover {
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	color: #f7d7b5;
+	background: #3fbd34;
+	font-weight: 600;
+	cursor: pointer;
+	transition: .8s;
+} 
+.points {
+	color: #3fbd34;
+	font-weight: 800;
+}
+.startMenuClose {
+	display: none;
+}
+.wordFirst {
+	width: 1200px;
+	height: 400px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wordFirst h2 {
+	font-size: 65px;
+	color: cornflowerblue;
+}
+.formModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(/img/fon_game_menu_6.jpeg) no-repeat center;
+	display: none;
+}
+#form {
+	margin: 180px auto;
+	width: 400px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 5px;
+}
+#form p {
+	text-align: center;
+	color: #e69138;
+	font-size: 25px;
+	padding-top: 10px;
+}
+.form_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.form_item input {
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	background: transparent;
+	color: #fff;
+	border: 2px solid #3fbd34;
+	border-radius: 5px;
+	outline: 0;
+    outline-offset: 0;
+}
+.form_item button {
+	width: 150px;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	background: #351c75;
+	color: #3fbd34;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.form_item button:hover {
+	cursor: pointer;
+	background: #3fbd34;
+	color: #351c75;
+	transition: .5s;
+}
+.formModalOpen {
+	display: block;
+}
+.tableScore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(/img/fon_game_menu_6.jpeg) no-repeat center;
+	display: none;
+}
+.tableScoreOpen {
+	display: flex;
+} 
+.tableScore_blackLinz {
+	background: rgba(0, 0, 0, .6);
+	border-radius: 5px;
+	border: 2px solid #3fbd34;
+}
+.tableScore_item {
+	
+	border-radius: 5px;
+	width: 600px;
+	/* height: 600px; */
+	color: #fff;
+	text-align: center;
+}
+.tableUl {
+	width: 100px;
+	height: 100px;
+	background: #3fbd34;
+}	
+.tableScore_title {
+	text-align: center;
+	font-size: 35px;
+	color: #e69138;
+}
+.tableUl {
+	display: flex;
+	justify-content: center;
+}
+.tableScore_buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.tableScore_buttons button {
+	margin-left: 10px;
+	width: 150px;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	background: #351c75;
+	color: #3fbd34;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.tableScore_buttons button:hover {
+	cursor: pointer;
+	background: #3fbd34;
+	color: #351c75;
+	transition: .5s;
+}
