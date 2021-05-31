@@ -5,7 +5,7 @@ html, body {
 	padding: 0;
 }
 body {
-	background: url(/img/bg1.jpg) center no-repeat;
+	background: url(./img/bg1.jpg) center no-repeat;
 	background-size: cover;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
@@ -24,7 +24,7 @@ body {
 }
 #player.skin {
 	width: 165px;
-	background: url(/img/Lovepik_com-400628551-fighter.png) no-repeat;
+	background: url(./img/Lovepik_com-400628551-fighter.png) no-repeat;
 	background-size: 168px;
 }
 .enemy {
@@ -33,7 +33,7 @@ body {
 	right: 20px;
 	width: 120px;
 	height: 73px;
-	background: url(/img/eneme3.gif) no-repeat;
+	background: url(./img/eneme3.gif) no-repeat;
 	background-size: 120px;
 }
 .bullet {
@@ -50,13 +50,13 @@ body {
     z-index: 5;
 }
 .boom {
-	background: url(/img/boom.gif);
+	background: url(./img/boom.gif);
 	position: absolute;
 	width: 200px;
 	height: 200px;
 }
 .boomPlayer {
-	background: url(/img/boomPlayer_3.gif);
+	background: url(./img/boomPlayer_3.gif);
 	background-size: 200px;
 	position: absolute;
 	width: 200px;
@@ -73,7 +73,7 @@ body {
 	float: left;
 	width: 40px;
 	height: 40px;
-	background: url(/img/playner.png);
+	background: url(./img/playner.png);
 	background-size: cover;
 }
 .score span{
@@ -105,7 +105,7 @@ body {
 	justify-content: space-between;
 }
 .start_game_menu {
-	background: url(/img/fon_game_menu_6.jpeg) no-repeat center;
+	background: url(./img/fon_game_menu_6.jpeg) no-repeat center;
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
@@ -158,7 +158,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url(/img/fon_game_menu_6.jpeg) no-repeat center;
+	background: url(./img/fon_game_menu_6.jpeg) no-repeat center;
 }
 #form {
 	margin: 180px auto;
@@ -335,7 +335,7 @@ body {
 	height: 500px;
 	margin-bottom: 10px;
 	border-radius: 5px;
-	background: url(/img/fon_game_menu_6.jpeg) no-repeat center;
+	background: url(./img/fon_game_menu_6.jpeg) no-repeat center;
 	color: #fff;
 	font-size: 20px;
 	font-stretch:inherit;

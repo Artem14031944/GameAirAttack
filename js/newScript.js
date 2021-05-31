@@ -7,27 +7,27 @@ const stateScore = [];
 
     //Пуля Игрока
     let bullet = new Audio;
-    bullet.src = '/audio/bullet_2.wav';
+    bullet.src = './audio/bullet_2.wav';
 
     //Звук двигателя Игрока
     let playerEngine = new Audio;
-    playerEngine.src = '/audio/player_4.mp3';
+    playerEngine.src = './audio/player_4.mp3';
 
     //Попадание в Врага 
     let boomEnemy = new Audio;
-    boomEnemy.src = '/audio/boom_1.mp3';
+    boomEnemy.src = './audio/boom_1.mp3';
 
     //Звук двигателя Врага
     let enemyEngine = new Audio;
-    enemyEngine.src = '/audio/enemy_1.wav';
+    enemyEngine.src = './audio/enemy_1.wav';
 
     //Звук попадание в Игрока
     let playPain = new Audio;
-    playPain.src = '/audio/когда попал враг_2.wav';
+    playPain.src = './audio/когда попал враг_2.wav';
 
     //Музыка фон игры
     let musicGame = new Audio;
-    musicGame.src = '/audio/музыка для фона_1.mp3';
+    musicGame.src = './audio/музыка для фона_1.mp3';
 
 //Функции звуков
 
